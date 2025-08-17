@@ -1,0 +1,110 @@
+body {
+  background: hsla(205, 46%, 10%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(205, 46%, 10%, 1) 0%,
+    hsla(191, 28%, 23%, 1) 50%,
+    hsla(207, 41%, 27%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(205, 46%, 10%, 1) 0%,
+    hsla(191, 28%, 23%, 1) 50%,
+    hsla(207, 41%, 27%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(205, 46%, 10%, 1) 0%,
+    hsla(191, 28%, 23%, 1) 50%,
+    hsla(207, 41%, 27%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0E1C26", endColorstr="#2A454B", GradientType=1 );
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: auto;
+}
+h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1rem 0;
+  text-shadow: 6px 6px 0.5px rgb(111, 0, 255);
+  font-size: 6rem;
+  color: rgba(255, 255, 255, 0.967);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.drum {
+  height: 8.5rem;
+  width: 8.5rem;
+  border: 20px black;
+  border-radius: 10%;
+  margin: 0 1.2rem;
+  background-color: white;
+  color: red;
+  font-size: 5rem;
+  font-weight: 900;
+  font-family: monospace;
+  box-shadow: 0.6rem 0.6rem 0 rgb(0, 0, 0);
+  transition: transform 0.26s, box-shadow 0.26s;
+}
+.drum:active {
+  transform: translateX(0.6rem) translateY(0.6rem);
+  box-shadow: none;
+}
+.set {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding: 10rem 0 0;
+}
+footer {
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  bottom: 2%;
+}
+.foot {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+}
+.fade {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+}
+.active {
+  transform: translateX(0.6rem) translateY(0.6rem);
+  box-shadow: none;
+}
+.w {
+  background: url(images/tom1.png);
+}
+.a {
+  background: url(images/tom2.png);
+}
+.s {
+  background: url(images/tom3.png);
+}
+.d {
+  background: url(images/tom4.png);
+}
+.j {
+  background: url(images/snare.png);
+}
+.k {
+  background: url(images/crash.png);
+}
+.l {
+  background: url(images/kick.png);
+}
